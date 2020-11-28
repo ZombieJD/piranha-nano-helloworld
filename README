@@ -6,8 +6,18 @@
   on port 8080 using the DefaultHttpServer. Feel free to customize
   it to your needs.
 
-  When you build it you can find the JLink image in the target/jlink
-  directory. Note that the resulting image is OS dependent.
+  To build the project use the following Maven command-line:
+
+    mvn clean install
+
+  After the build you can find the JLink image in the target/jlink
+  directory. Be aware that the resulting image is OS specific.
+
+  Note the Piranha version in the POM file is dependent on the version of the
+  Piranha CLI used. If you want to update it to the latest Piranha version use
+  the following Maven command-line:
+
+    mvn versions:update-property -Dproperty=piranha.version
 
   If you have any questions and/or suggestions feel free to leave
   them as issues at the GitHub issue tracker at:
