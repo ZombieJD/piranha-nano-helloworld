@@ -1,0 +1,17 @@
+
+  README
+  ======
+
+  This project has been setup to build and run your Servlet locally
+  on port 8080 using the DefaultHttpServer. Feel free to customize
+  it to your needs.
+
+  When you build it you can find the JLink image in the target/jlink
+  directory. Note that the resulting image is OS dependent.
+
+  If you have any questions and/or suggestions feel free to leave
+  them as issues at the GitHub issue tracker at:
+
+	https://github.com/piranhacloud/piranha
+
+--END
