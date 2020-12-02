@@ -16,15 +16,19 @@ public class HelloWorldServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, 
             HttpServletResponse response) throws IOException, ServletException {
-        PrintWriter writer = response.getWriter();
-        writer.println("Hello World");
+        try (PrintWriter writer = response.getWriter()) {
+            writer.println("Hello World");
+            writer.flush();
+        }
     }
 
     public static void main(String[] arguments) throws Exception {
         NanoPiranha piranha = new NanoPiranhaBuilder()
                 .servlet("HelloWorld", new HelloWorldServlet())
                 .build();
-        DefaultHttpServer server = new DefaultHttpServer(8080, 
+        int port = System.getenv("FUNCTIONS_CUSTOMHANDLER_PORT") != null 
+                ? Integer.parseInt(System.getenv("FUNCTIONS_CUSTOMHANDLER_PORT")) : 8080;
+        DefaultHttpServer server = new DefaultHttpServer(port, 
                 new NanoHttpServerProcessor(piranha), false);
         server.start();
     }

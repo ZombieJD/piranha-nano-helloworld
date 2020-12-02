@@ -15,7 +15,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.1</version>
+                <version>3.8.1</version>
                 <configuration>
                     <release>15</release>
                 </configuration>
@@ -140,7 +140,7 @@
     </repositories>
     <profiles>    
         <profile>
-            <id>release</id>
+            <id>project</id>
             <build>
                 <plugins>
                     <plugin>
@@ -160,7 +160,7 @@
                             <formats>zip</formats>
                             <appendAssemblyId>false</appendAssemblyId>
                             <descriptorRefs>
-                                <descriptorRef>src</descriptorRef>
+                                <descriptorRef>project</descriptorRef>
                             </descriptorRefs>
                         </configuration>
                     </plugin>
