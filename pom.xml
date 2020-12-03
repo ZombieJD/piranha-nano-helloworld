@@ -138,7 +138,44 @@
             </snapshots>
         </repository>
     </repositories>
-    <profiles>    
+    <profiles>
+        <!-- 
+
+            This profile is used by pi nano cloud build
+                 
+          -->
+        <profile>
+            <id>azure</id> 
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-assembly-plugin</artifactId>
+                        <version>3.3.0</version>
+                        <executions>
+                            <execution>
+                                <id>default-assembly</id>
+                                <phase>install</phase>
+                                <goals>
+                                    <goal>single</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <formats>zip</formats>
+                            <appendAssemblyId>false</appendAssemblyId>
+                            <descriptors>src/main/assembly/azure.xml</descriptors>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <!--
+
+            This profile is used to generate a zip file containing everything
+            except for the target directory.
+                 
+          -->
         <profile>
             <id>project</id>
             <build>
@@ -169,7 +206,7 @@
         </profile>
     </profiles>
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <piranha.version>20.12.0-SNAPSHOT</piranha.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 </project>
