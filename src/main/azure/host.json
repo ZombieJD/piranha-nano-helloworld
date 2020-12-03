@@ -2,7 +2,7 @@
     "version": "2.0",
     "customHandler": {
         "description": {
-            "defaultExecutablePath": "runtime/bin/java"
+            "defaultExecutablePath": "runtime/bin/launcher"
         },
         "arguments": [
             "--module",

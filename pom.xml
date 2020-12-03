@@ -93,13 +93,13 @@
                                 <module>helloworld</module>
                             </modules>
                             <launcher>
-                                <name>helloworld</name>
+                                <name>launcher</name>
                                 <module>helloworld</module>
                             </launcher>
                             <noManPages>true</noManPages>
                             <noHeaderFiles>true</noHeaderFiles>
                             <compression>2</compression>
-                            <outputDirectory>${project.build.directory}/jlink</outputDirectory>
+                            <outputDirectory>${project.build.directory}/runtime</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>

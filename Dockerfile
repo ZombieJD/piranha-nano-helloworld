@@ -10,6 +10,6 @@ RUN export PATH=$PATH:/usr/local/apache-maven-3.6.3/bin && \
     mvn --no-transfer-progress clean install
 
 FROM debian:10-slim
-COPY --from=builder /root/target/jlink /usr/local/helloworld
+COPY --from=builder /root/target/runtime /usr/local/runtime
 EXPOSE 8080
-CMD ["/usr/local/helloworld/bin/helloworld"]
+CMD ["/usr/local/runtime/bin/launcher"]
