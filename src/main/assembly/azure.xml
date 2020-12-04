@@ -9,14 +9,14 @@
     <includeBaseDirectory>false</includeBaseDirectory>
     <fileSets>
         <fileSet>
-            <directory>${project.build.directory}/runtime</directory>
+            <directory>${project.build.directory}/azure</directory>
             <outputDirectory>runtime</outputDirectory>
             <excludes>
                 <exclude>bin/*</exclude>
             </excludes>
         </fileSet>
         <fileSet>
-            <directory>${project.build.directory}/runtime</directory>
+            <directory>${project.build.directory}/azure</directory>
             <outputDirectory>runtime</outputDirectory>
             <includes>
                 <include>bin/*</include>
