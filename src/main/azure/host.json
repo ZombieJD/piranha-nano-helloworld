@@ -2,12 +2,12 @@
     "version": "2.0",
     "customHandler": {
         "description": {
-            "defaultExecutablePath": "runtime/bin/launcher"
+            "defaultExecutablePath": "runtime/bin/java",
+            "arguments": [
+                "--module",
+                "helloworld/helloworld.HelloWorldServlet"
+            ]
         },
-        "arguments": [
-            "--module",
-            "helloworld/helloworld.HelloWorldServlet"
-        ],
         "enableForwardingHttpRequest": true
     },
     "extensionBundle": {
