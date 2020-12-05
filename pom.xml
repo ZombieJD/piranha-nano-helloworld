@@ -5,11 +5,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>cloud.piranha.template.nano</groupId>
-    <artifactId>helloworld-servlet</artifactId>
+    <groupId>cloud.piranha.template</groupId>
+    <artifactId>piranha-nano-helloworld-servlet</artifactId>
     <version>20.12.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>HelloWorld Servlet</name>
+    <name>Piranha Nano - HelloWorld Servlet</name>
     <build>
         <plugins>
             <plugin>
