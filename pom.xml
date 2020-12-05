@@ -9,7 +9,7 @@
     <artifactId>piranha-nano-helloworld-servlet</artifactId>
     <version>20.12.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Piranha Nano - HelloWorld Servlet</name>
+    <name>Piranha Template - Piranha Nano - HelloWorld Servlet</name>
     <build>
         <plugins>
             <plugin>
