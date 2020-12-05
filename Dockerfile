@@ -16,8 +16,9 @@ RUN export PATH=$PATH:/usr/local/apache-maven-3.6.3/bin && \
 #
 FROM debian:10-slim AS zip
 RUN apt-get update && apt-get install -y zip
-COPY --from=builder /root/target/runtime /usr/local/runtime
-RUN cd /usr/local/runtime ; zip -r ../runtime.zip *
+COPY --from=builder /root/target/runtime /usr/local/azure/runtime
+COPY --from=builder /root/src/main/azure /usr/local/azure
+RUN cd /usr/local/azure ; zip -r ../azure.zip *
 
 #
 # Stage used to create a runnable Debian image based on the custom JLink runtime
