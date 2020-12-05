@@ -159,9 +159,7 @@
                         <configuration>
                             <formats>zip</formats>
                             <appendAssemblyId>false</appendAssemblyId>
-                            <descriptorRefs>
-                                <descriptorRef>project</descriptorRef>
-                            </descriptorRefs>
+                            <descriptors>src/main/assembly/project.xml</descriptors>
                         </configuration>
                     </plugin>
                 </plugins>
