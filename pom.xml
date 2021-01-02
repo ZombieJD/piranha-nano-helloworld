@@ -7,7 +7,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cloud.piranha.template</groupId>
     <artifactId>piranha-nano-helloworld-servlet</artifactId>
-    <version>20.12.0-SNAPSHOT</version>
+    <version>21.1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Piranha Template - Piranha Nano - HelloWorld Servlet</name>
     <build>
@@ -167,7 +167,7 @@
         </profile>
     </profiles>
     <properties>
-        <piranha.version>20.12.0-SNAPSHOT</piranha.version>
+        <piranha.version>21.1.0</piranha.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 </project>
