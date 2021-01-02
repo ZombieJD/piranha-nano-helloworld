@@ -13,9 +13,9 @@
   After the build you can find the JLink image in the target/runtime
   directory. Be aware that the resulting image is OS specific.
 
-  Note the Piranha version in the POM file is dependent on the version of the
-  Piranha CLI used. If you want to update it to the latest Piranha version use
-  the following Maven command-line:
+  Note the Piranha version in the POM file is set to a fixed version when the
+  template was last released. If you want to update it to the latest Piranha
+  version use the following Maven command-line:
 
     mvn versions:update-property -Dproperty=piranha.version
 
