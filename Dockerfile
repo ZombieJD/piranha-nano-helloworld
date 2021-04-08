@@ -1,7 +1,7 @@
 #
 # Stage used to build the custom JLink runtime
 #
-FROM adoptopenjdk:15 AS builder
+FROM adoptopenjdk:16 AS builder
 RUN cd /usr/local && \
     curl -O https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz && \
     tar xfvz apache-maven-3.6.3-bin.tar.gz && \

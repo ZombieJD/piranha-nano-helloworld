@@ -7,5 +7,5 @@ module helloworld {
     requires cloud.piranha.http.webapp;
     requires cloud.piranha.http.nano;
     requires cloud.piranha.nano;
-    requires cloud.piranha.servlet.api;
+    requires jakarta.servlet;
 }
