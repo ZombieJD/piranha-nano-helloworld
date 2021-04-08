@@ -7,11 +7,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cloud.piranha.template</groupId>
     <artifactId>piranha-nano-helloworld-servlet</artifactId>
-<<<<<<< HEAD
-    <version>21.1.0-SNAPSHOT</version>
-=======
     <version>21.3.0-SNAPSHOT</version>
->>>>>>> a6f5a39 (Fixes issue #4 - Unable to build project)
     <packaging>jar</packaging>
     <name>Piranha Template - Piranha Nano - HelloWorld Servlet</name>
     <build>
@@ -171,11 +167,7 @@
         </profile>
     </profiles>
     <properties>
-<<<<<<< HEAD
-        <piranha.version>21.1.0</piranha.version>
-=======
         <piranha.version>21.3.0</piranha.version>
->>>>>>> a6f5a39 (Fixes issue #4 - Unable to build project)
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 </project>
