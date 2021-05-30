@@ -26,4 +26,4 @@ RUN cd /usr/local/azure ; zip -r ../azure.zip *
 FROM debian:10-slim
 COPY --from=builder /root/target/runtime /usr/local/runtime
 EXPOSE 8080
-CMD ["/usr/local/runtime/bin/launcher"]
+CMD ["/usr/local/runtime/bin/helloworld"]
