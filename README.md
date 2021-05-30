@@ -18,7 +18,9 @@ building the project you will find it in the `target/jlink` directory. If you
 want to try it out execute the wrapper in `target/jlink/bin/helloworld` And then
 browse to `http://localhost:8080` to see it in action.
 
-## Creating a Docker image with the JLink runtime
+## Docker image with JLink runtime
+
+### Creating a Docker image with the JLink runtime
 
 If you want to deploy the JLink runtime using a Docker image you can execute
 the following command line:
@@ -30,13 +32,38 @@ the following command line:
 This will create a Docker image named `jlink` you can then push to a Docker
 registry or execute locally using Docker.
 
-## Executing the Docker image with the JLink runtime
+### Executing the Docker image with the JLink runtime
 
 Once you have completed the previous section executing the Docker image is as
 simple as the command line below.
 
 ```shell
   docker run --rm -it -p 8080:8080 jlink
+```
+
+And then browse to `http://localhost:8080` to see it in action.
+
+## Docker image with GraalVM binary
+
+### Create a Docker image with a GraalVM binary
+
+If you want to deploy a GraalVM binary using a Docker image you can execute
+the following command line:
+
+```shell
+  docker build -t graalvm -f Dockerfile-graalvm
+```
+
+This will create a Docker image named `graalvm` you can then push to a Docker
+registry or execute locally using Docker
+
+### Execute the Docker image with a GraalVM binary
+
+Once you have completed the previous section executing the Docker image is as
+simple as the command line below.
+
+```shell
+  docker run --rm -it -p 8080:8080 graalvm
 ```
 
 And then browse to `http://localhost:8080` to see it in action.
