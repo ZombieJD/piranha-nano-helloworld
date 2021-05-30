@@ -51,7 +51,7 @@ If you want to deploy a GraalVM binary using a Docker image you can execute
 the following command line:
 
 ```shell
-  docker build -t graalvm -f Dockerfile-graalvm
+  docker build -t graalvm -f Dockerfile-graalvm .
 ```
 
 This will create a Docker image named `graalvm` you can then push to a Docker
